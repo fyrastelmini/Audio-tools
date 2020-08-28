@@ -10,7 +10,7 @@ import statistics as stat
 ##Lower coeff values mean that the code "tolerates" lower sounds more, this makes sure that the separation happens at the end of the word/sentence so that the lower sounding phones (example:"bi","fa") dont get cut off. But this may cause the output segments to be larger in duration
 ##Higher coeff values make the code "tolerate" less, this makes the duration of the outputs shorter, but at the risk of ignoring lower sounding phones
 ##Empyrically, the best value for coeff makes the code separate the input into segments of a minimal duration without ignoring parts of the words
-##For example: for monotonous sound files with a duration of 20minutes, the value seems to be around 0.2, for a clear voice file of 15 seconds, the value seems to be around 1.5
+##For example: for monotonous sound files with a duration of 20minutes, the value seems to be either around 0.2 or 0.8, for a clear voice file of 15 seconds, the value seems to be around 1.5
 
 def separation(fichier,coeff):
     inputch="./"+fichier
