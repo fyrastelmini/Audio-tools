@@ -25,7 +25,7 @@ NEW FILE: audio_tools.py
                      these processes are highly empirical so its hard to garantee results but im quite satisfied with this version, its downfall is that the 
                      output segments are conciderably (and unavoidably) much longer
                      Example: get_words(signal,fs,1.3,1)
-                     Note: an out of range error signifies that the coeff is too low for a separation to take place, separation may also fail for shorter segments                            so you can use the old version for those
+                     Note: an out of range error signifies that the coeff is too low for a separation to take place, separation may also fail for shorter segments so you can use the old version for those
 
 
 
