@@ -6,7 +6,7 @@ NEW FILE: audio_tools.py
           compress: applies a compressor to normalize the volume, may be useful on its own as a preprocess but its used mostly for a more stable word separation
            Example: signal_c=compress(signal,-30,1000,0,1.0,500) (how compressors work: https://www.youtube.com/watch?v=pGl8L4fFC14&ab_channel=PiercePorterfield)
           
-          phone: applies a phone "filter" that transforms an audio into what it would sound like if it came from a phone, useful for training phone ASR models
+          phone: applies a phone "filter" that transforms an audio into what it would sound like if it came from a phone, useful for training phone ASR models (turns a normal dataset into a phone dataset for example)
                  Example: signal_phone=telephone(signal,fs)
           
           get_words: a new approach to separation.py, basically this is less clumsy/chaotic, the results are stable but are usually longer than those
